@@ -1,0 +1,94 @@
+.text {
+	line-height: 1.5;
+	font-size: 16px;
+	@include r(1200) {
+		font-size: 14px;
+	}
+	&--center {
+		text-align: center;
+		img {
+			margin-left: auto;
+			margin-right: auto;
+		}
+	}
+	p {
+		margin-bottom: 1em;
+	}
+	// blockquote {
+	// 	margin-bottom: 1rem;
+	// 	padding-left: 15px;
+	// 	border-left: 2px solid #CAD4D4;
+	// 	font-style: italic;
+	// }
+	h5 {
+		font-weight: bold;
+		font-size: 20px;
+		margin-bottom: 1rem;
+	}
+	h6 {
+		font-weight: bold;
+		margin-bottom: 1rem;
+	}
+	strong, b {
+		font-weight: bold;
+	}
+	a {
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	i {
+		font-style: italic;
+	}
+	iframe {
+		display: block;
+		max-width: 948px;
+		width: 100%;
+		margin-bottom: 2rem;
+		height: 570px;
+		margin-top: 2rem;
+		@include r(1700) {
+			height: 480px;
+		}
+	}
+	picture {
+		padding-right: 140px;
+		display: block;
+		@include r(1200) {
+			padding-right: 0px;
+		}
+	}
+	img {
+		display: block;
+		max-width: 100%;
+		width: auto;
+		margin-bottom: 2rem;
+		margin-top: 2rem;
+	}
+	ul {
+		list-style-type: square;
+		margin-bottom: 1em;
+		font-size: inherit;
+		padding-left: 40px;
+		@include r(1200) {
+			list-style-position: inside;
+			padding-left: 0px;
+		}
+	}
+	li {
+		margin-bottom: 1rem;
+	}
+	// ol {
+	// 	list-style-type: decimal;
+	// 	list-style-position: inside;
+	// 	margin-bottom: 2em;
+	// 	line-height: 2;
+	// 	font-size: inherit;
+	// }
+	.btn {
+		color: $light;
+		padding-left: 53px;
+		padding-right: 53px;
+		margin-bottom: 1em;
+	}
+}

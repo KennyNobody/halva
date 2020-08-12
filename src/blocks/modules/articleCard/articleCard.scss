@@ -1,0 +1,43 @@
+.article-card {
+	color: $dark;
+	text-decoration: none;
+	margin-bottom: 30px;
+	width: calc(25% - 15px);
+	&:hover {
+		.article-card__title {
+			color: #648179;
+		}
+	}
+	&__figure {
+		margin-bottom: 10px;
+	}
+	&__picture {
+		display: block;
+		height: 158px;
+		img {
+			display: block;
+			height: 100%;
+			width: 100%;
+			object-fit: cover;
+		}
+	}
+	&__figcaption {
+
+	}
+	&__date {
+		margin-bottom: 10px;
+		color: $accent;
+	}
+	&__tag {
+		color: $accent;
+		margin-bottom: 10px;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 0.2rem;
+	}
+	&__title {
+		font-size: 18px;
+		font-weight: bold;
+		font-family: $font-title;
+	}
+}
