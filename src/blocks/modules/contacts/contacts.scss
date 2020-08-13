@@ -1,0 +1,32 @@
+.contacts {
+	&__content {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__column {
+		&--left {
+			width: calc(100% / 12 * 6 - 15px);
+		}
+		&--right {
+			width: calc(100% / 12 * 6 - 15px);
+		}
+	}
+	&__text {
+		&--accent {
+			background-color: #F6F7FB;
+			font-style: italic;
+			padding: 21px 100px 24px 34px;
+			position: relative;
+			&:after {
+				content: "";
+				top: 21px;
+				bottom: 24px;
+				left: 16px;
+				width: 2px; 
+				background-color: $accent;
+				position: absolute;
+				display: block;
+			}
+		}
+	}
+}

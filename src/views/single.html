@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>6. Одна запись</title>
+    @@include("../blocks/modules/head/head.html")
+</head>
+<body class="body">
+    @@include("../blocks/modules/header/header.html")
+    <main class="main">
+        <section class="section section--breadcrumbs">
+            <div class="container">
+                <div class="breadcrumbs">
+                    <a href="" class="breadcrumbs__link">
+                        Главная
+                    </a>
+                    <svg class="icon-svg breadcrumbs__icon">
+                        <use xlink:href="img/sprites/sprite.svg#icon-crumb"></use>
+                    </svg>
+                    <span class="breadcrumbs__link breadcrumbs__link--static">
+                        Минздрав Казахстана определил допустимый процент негативных публикаций о борьбе с COVID-19
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="section section--single">
+            <div class="container">
+                @@include("../blocks/modules/single/single.html")
+            </div>
+        </section>
+
+        <section class="section section--news">
+            <div class="container">
+                <h2 class="title">
+                    <span class="title__text">Читайте также:</span>
+                </h2>
+                <div class="articles">
+                    @@include("../blocks/modules/articleCard/articleCard-tag.html")
+                    @@include("../blocks/modules/articleCard/articleCard-tag.html")
+                    @@include("../blocks/modules/articleCard/articleCard-tag.html")
+                    @@include("../blocks/modules/articleCard/articleCard-tag.html")
+                    <div class="clear clear--25"></div>
+                    <div class="clear clear--25"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section section--bottom">
+            <div class="container">
+                <div class="to-top">
+                    <a href="" class="to-top__link">
+                        <span class="to-top__text">
+                            В начало
+                        </span>
+                        <svg class="icon-svg">
+                            <use xlink:href="img/sprites/sprite.svg#icon-top"></use>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+    @@include("../blocks/modules/footer/footer.html")
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
+</body>
+</html>

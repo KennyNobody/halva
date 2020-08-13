@@ -3,10 +3,16 @@
 	text-decoration: none;
 	margin-bottom: 30px;
 	width: calc(25% - 15px);
+	display: block;
 	&:hover {
 		.article-card__title {
 			color: #648179;
 		}
+	}
+	&--sticky {
+		position: sticky;
+		width: 100%;
+		top: 20px;
 	}
 	&__figure {
 		margin-bottom: 10px;
@@ -27,6 +33,7 @@
 	&__date {
 		margin-bottom: 10px;
 		color: $accent;
+		display: block;
 	}
 	&__tag {
 		color: $accent;
@@ -39,5 +46,6 @@
 		font-size: 18px;
 		font-weight: bold;
 		font-family: $font-title;
+		line-height: 1.4;
 	}
 }

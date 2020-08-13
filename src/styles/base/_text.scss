@@ -14,25 +14,51 @@
 	p {
 		margin-bottom: 1em;
 	}
-	// blockquote {
-	// 	margin-bottom: 1rem;
-	// 	padding-left: 15px;
-	// 	border-left: 2px solid #CAD4D4;
-	// 	font-style: italic;
-	// }
-	h5 {
+	blockquote {
+		margin-bottom: 1rem;
+		background-color: #F6F7FB;
+		padding-left: 108px;
+		padding-top: 24px;
+		padding-bottom: 16px;
+		padding-right: 24px;
+		position: relative;
+		font-style: italic;
+		&:before {
+			width: 1px;
+			position: absolute;
+			top: 24px;
+			bottom: calc(16px + 1rem);
+			width: 2px;
+			display: block;
+			content: "";
+			background-color: $accent;
+			left: 67px;
+		}
+	}
+	h2 {
 		font-weight: bold;
 		font-size: 20px;
+		font-family: $font-title;
 		margin-bottom: 1rem;
 	}
-	h6 {
+	h3 {
 		font-weight: bold;
+		font-size: 18px;
+		font-family: $font-title;
+		margin-bottom: 1rem;
+	}
+	h4 {
+		font-weight: bold;
+		font-size: 16px;
+		font-family: $font-title;
 		margin-bottom: 1rem;
 	}
 	strong, b {
 		font-weight: bold;
 	}
 	a {
+		font-style: normal;
+		color: $accent;
 		&:hover {
 			text-decoration: none;
 		}
@@ -51,11 +77,17 @@
 			height: 480px;
 		}
 	}
-	picture {
-		padding-right: 140px;
+	figure {
 		display: block;
-		@include r(1200) {
-			padding-right: 0px;
+		color: #4F5F5A;
+		margin-bottom: 35px;
+		picture {
+			display: block;
+			margin-bottom: 14px;
+		}
+		img {
+			display: block;
+			margin-bottom: 0px;
 		}
 	}
 	img {
@@ -75,16 +107,19 @@
 			padding-left: 0px;
 		}
 	}
+	ol {
+		list-style-type: decimal;
+		margin-bottom: 1em;
+		font-size: inherit;
+		padding-left: 40px;
+		@include r(1200) {
+			list-style-position: inside;
+			padding-left: 0px;
+		}
+	}
 	li {
 		margin-bottom: 1rem;
 	}
-	// ol {
-	// 	list-style-type: decimal;
-	// 	list-style-position: inside;
-	// 	margin-bottom: 2em;
-	// 	line-height: 2;
-	// 	font-size: inherit;
-	// }
 	.btn {
 		color: $light;
 		padding-left: 53px;

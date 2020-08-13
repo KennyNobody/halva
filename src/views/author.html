@@ -1,48 +1,38 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <title>Главная</title>
+    <title>2. Автор</title>
     @@include("../blocks/modules/head/head.html")
 </head>
 <body class="body">
     @@include("../blocks/modules/header/header.html")
     <main class="main">
-        <section class="section section--news">
+        <section class="section section--breadcrumbs">
             <div class="container">
-                <h2 class="title">
-                    <span class="title__text">Главная тема</span>
-                </h2>
-                <div class="articles">
-                    @@include("../blocks/modules/articleLarge/articleLarge-light.html")
-                    @@include("../blocks/modules/articleLarge/articleLarge-accent.html")
+                <div class="breadcrumbs">
+                    <a href="" class="breadcrumbs__link">
+                        Главная
+                    </a>
+                    <svg class="icon-svg breadcrumbs__icon">
+                        <use xlink:href="img/sprites/sprite.svg#icon-crumb"></use>
+                    </svg>
+                    <span class="breadcrumbs__link breadcrumbs__link--static">
+                        Денис Парацетамолов
+                    </span>
                 </div>
             </div>
-
         </section>
-        <section class="section section--news">
+
+        <section class="section section--person">
             <div class="container">
-                <h2 class="title">
-                    <span class="title__text">Новости</span>
-                </h2>
-                <div class="articles-lines">
-                    @@include("../blocks/modules/articleLine/articleLine.html")
-                    @@include("../blocks/modules/articleLine/articleLine.html")
-                    @@include("../blocks/modules/articleLine/articleLine.html")
-                    @@include("../blocks/modules/articleLine/articleLine.html")
-                    @@include("../blocks/modules/articleLine/articleLine.html")
-                    @@include("../blocks/modules/articleLine/articleLine.html")
-                    @@include("../blocks/modules/articleLine/articleLine.html")
-                    @@include("../blocks/modules/articleLine/articleLine.html")
-                    @@include("../blocks/modules/articleLine/articleLine.html")
-                    @@include("../blocks/modules/articleLine/articleLine.html")
-                </div>
+                @@include("../blocks/modules/person/person.html")
             </div>
-
         </section>
+
         <section class="section section--news">
             <div class="container">
                 <h2 class="title">
-                    <span class="title__text">Аналитика</span>
+                    <span class="title__text">Публикации</span>
                 </h2>
                 <div class="articles">
                     @@include("../blocks/modules/articleCard/articleCard-tag.html")

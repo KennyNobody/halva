@@ -1,0 +1,15 @@
+.breadcrumbs {
+	display: flex;
+	align-items: center;
+	&__link {
+		text-decoration: none;
+		color: $dark;
+		&--static {
+			color: #648179;
+		}
+	}
+	&__icon {
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+}

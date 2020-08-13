@@ -1,5 +1,6 @@
 @import "modules/header/header";
 @import "modules/footer/footer";
+@import "modules/breadcrumbs/breadcrumbs";
 
 // Articles
 @import "modules/articleCard/articleCard";
@@ -8,3 +9,9 @@
 
 // Modal
 @import "modules/articleLine/articleLine";
+
+// Blocks
+@import "modules/person/person";
+@import "modules/single/single";
+@import "modules/contacts/contacts";
+@import "modules/none/none";
