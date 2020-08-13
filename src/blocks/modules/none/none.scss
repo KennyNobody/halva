@@ -1,3 +1,39 @@
 .none {
-	
+	&__columns {
+		display: flex;
+		justify-content: space-between;
+	}
+	&__column {
+		&--thumb {
+			width: calc(100% / 12 * 7 - 15px);
+		}
+		&--content {
+			width: calc(100% / 12 * 4 - 15px);
+			padding-top: 55px;
+		}
+	}
+	&__thumb {
+		display: block;
+		width: 100%;
+	}
+	&__title {
+		font-size: 24px;
+		font-weight: bold;
+		font-family: $font-title;
+		margin-bottom: 43px;
+	}
+	&__text {
+		margin-bottom: 33px;
+		line-height: 1.4;
+	}
+	&__btn {
+		display: inline-flex;
+		padding: 10px 90px;
+		border-radius: 6px;
+		background-color: $dark;
+		color: $light;
+		text-decoration: none;
+		font-weight: 500;
+	}
+
 }
