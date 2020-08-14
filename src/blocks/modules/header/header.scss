@@ -1,5 +1,14 @@
 .header {
 	margin-bottom: 30px;
+	@include r(1200) {
+		display: none;
+	}
+	&--mob {
+		display: none;
+		@include r(1200) {
+			display: block;
+		}
+	}
 }
 
 .header-top {
@@ -9,6 +18,11 @@
 	border-bottom: 4px solid $dark;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	@include r(1200) {
+		padding-top: 8px;
+		padding-bottom: 8px;
+		border-bottom: 1px solid #F6F7FB;
+	}
 	&__logo {
 		display: block;
 		img {
