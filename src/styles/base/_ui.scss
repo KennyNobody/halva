@@ -4,6 +4,9 @@
 	text-transform: uppercase;
 	font-weight: bold;
 	margin-bottom: 30px;
+	@include r(1200) {
+		margin-bottom: 15px;
+	}
 	&__text {
 		position: relative;
 		display: inline-block;

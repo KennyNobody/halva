@@ -4,6 +4,14 @@
 	margin-bottom: 30px;
 	width: calc(25% - 15px);
 	display: block;
+	@include r(1200) {
+		width: calc(50% - 15px);
+		margin-bottom: 30px;
+	}
+	@include r(780) {
+		width: 100%;
+		margin-bottom: 30px;
+	}
 	&:hover {
 		.article-card__title {
 			color: #648179;

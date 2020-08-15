@@ -41,6 +41,10 @@
 	align-items: center;
 	padding-bottom: 3px;
 	border-bottom: 1px solid $dark;
+	@include r(1200) {
+		padding-top: 8px;
+		padding-bottom: 8px;
+	}
 	&__nav {
 		display: flex;
 		justify-content: space-between;
@@ -53,6 +57,17 @@
 		color: $dark;
 		text-decoration: none;
 		display: inline-block;
+	}
+	&__btn {
+		height: 28px;
+		width: 28px;
+		border: none;
+		background: none;
+		svg {
+			display: block;
+			height: 100%;
+			width: 100%;
+		}
 	}
 }
 
@@ -83,6 +98,10 @@
 		height: 30px;
 		width: 30px;
 		margin-right: 20px;
+		@include r(1200) {
+			height: 26px;
+			width: 26px;
+		}
 		&:last-of-type {
 			margin-right: 0px;
 		}
