@@ -18,6 +18,9 @@
 	border-bottom: 4px solid $dark;
 	padding-top: 15px;
 	padding-bottom: 15px;
+	position: relative;
+	z-index: 3;
+	background-color: $light;
 	@include r(1200) {
 		padding-top: 8px;
 		padding-bottom: 8px;
@@ -28,6 +31,9 @@
 		img {
 			display: block;
 			width: 236px;
+			@include r(1200) {
+				width: 112px;
+			}
 		}
 		&:hover {
 			opacity: 0.7;
@@ -41,9 +47,13 @@
 	align-items: center;
 	padding-bottom: 3px;
 	border-bottom: 1px solid $dark;
+	position: relative;
+	z-index: 3;
+	background-color: $light;
 	@include r(1200) {
 		padding-top: 8px;
 		padding-bottom: 8px;
+		border-bottom: 1px solid #F6F7FB;
 	}
 	&__nav {
 		display: flex;
@@ -67,17 +77,81 @@
 			display: block;
 			height: 100%;
 			width: 100%;
+			&:nth-child(2) {
+				display: none;
+			}
+		}
+		&--opened {
+			svg {
+				&:nth-child(1) {
+					display: none;
+				}
+				&:nth-child(2) {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+.header-menu {
+	position: absolute;
+	height: 100vh;
+	left: 0px;
+	right: 0px;
+	bottom: 100%;
+	background-color: $light;
+	display: block;
+	z-index: 2;
+	padding-top: 93px;
+	padding-bottom: 28px;
+	padding-left: 16px;
+	padding-right: 16px;
+	transition: 0.3s all;
+	visibility: hidden;
+	&--opened {
+		bottom: 0%;
+		visibility: visible;
+	}
+	&__nav {
+		display: flex;
+		flex-direction: column;
+		height: 100%;
+	}
+	&__link {
+		width: 100%;
+		display: block;
+		justify-content: space-between;
+		flex-grow: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		text-decoration: none;
+		color: $dark;
+		border-bottom: 1px solid #F6F7FB;
+		&:last-of-type {
+			border-bottom: none;
+		}
+		&:hover {
+			opacity: 0.7;
 		}
 	}
 }
 
 .search {
+	@include r(1200) {
+		margin-left: 22px;
+	}
 	&__btn {
 		height: 30px;
 		width: 30px;
 		border: none;
 		background-color: $light;
 		display: block;
+		@include r(1200) {
+			width: 20px;
+			height: 20px;
+		}
 		svg {
 			height: 100%;
 			width: 100%;

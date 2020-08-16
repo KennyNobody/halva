@@ -23,16 +23,47 @@
 		padding-right: 24px;
 		position: relative;
 		font-style: italic;
+		@include r(1200) {
+			padding-left: 15px;
+			padding-right: 0px;
+			padding-top: 22px;
+			padding-bottom: 22px;
+		}
 		&:before {
 			width: 1px;
 			position: absolute;
 			top: 24px;
-			bottom: calc(16px + 1rem);
+			bottom: 16px;
 			width: 2px;
 			display: block;
 			content: "";
 			background-color: $accent;
 			left: 67px;
+			@include r(1200) {
+				left: 0px;
+				top: 22px;
+				bottom: 22px;
+				// bottom: 1rem;
+			}
+		}
+		&:after {
+			@include r(1200) {
+				content: "";
+				z-index: -1;
+				display: block;
+				top: 0px;
+				bottom: 0px;
+				left: -100%;
+				width: 300%;
+				position: absolute;
+				display: block;
+				background-color: #F6F7FB;
+			}
+		}
+		p {
+			&:last-of-type {
+				margin-bottom: 0px;
+			}
 		}
 	}
 	h2 {
@@ -40,18 +71,29 @@
 		font-size: 20px;
 		font-family: $font-title;
 		margin-bottom: 1rem;
+		@include r(1200) {
+			font-size: 18px;
+			font-family: $font-title;
+		}
 	}
 	h3 {
 		font-weight: bold;
 		font-size: 18px;
 		font-family: $font-title;
 		margin-bottom: 1rem;
+		@include r(1200) {
+			font-size: 16px;
+			font-family: $font-main;
+		}
 	}
 	h4 {
 		font-weight: bold;
 		font-size: 16px;
 		font-family: $font-title;
 		margin-bottom: 1rem;
+		@include r(1200) {
+			font-family: $font-main;
+		}
 	}
 	strong, b {
 		font-weight: bold;
@@ -73,17 +115,23 @@
 		margin-bottom: 2rem;
 		height: 570px;
 		margin-top: 2rem;
-		@include r(1700) {
+		@include r(1200) {
 			height: 480px;
 		}
 	}
 	figure {
 		display: block;
 		color: #4F5F5A;
-		margin-bottom: 35px;
+		margin-bottom: 1.5rem;
+		@include r(1200) {
+			margin-bottom: 1rem;
+		}
 		picture {
 			display: block;
 			margin-bottom: 14px;
+			@include r(1700) {
+				margin-bottom: 8px;
+			}
 		}
 		img {
 			display: block;

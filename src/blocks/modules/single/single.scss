@@ -1,11 +1,20 @@
 .single {
 	display: flex;
 	justify-content: space-between;
+	@include r(1200) {
+		display: block;
+	}
 	&__content {
 		width: calc(100% / 12 * 8 - 30px);
+		@include r(1200) {
+			width: 100%;
+		}
 	}
 	&__sidebar {
 		width: calc(100% / 12 * 3 - 30px);
+		@include r(1200) {
+			display: none;
+		}
 	}
 	&__picture {
 		display: block;
@@ -20,19 +29,48 @@
 		font-size: 24px;
 		font-family: $font-title;
 		margin-bottom: 14px;
+		@include r(1200) {
+			margin-bottom: 10px;
+			font-size: 16px;
+		}
 	}
 	&__time {
 		color: $accent;
 		margin-bottom: 14px;
+		@include r(1200) {
+			font-size: 14px;	
+		}
 	}
 	&__share {
 		margin-bottom: 45px;
+		@include r(1200) {
+			margin-bottom: 20px;
+		}
 	}
 	&__author {
 		margin-bottom: 40px;
+		@include r(1200) {
+			margin-bottom: 0px;
+			display: none;
+		}
+		&--mobile {
+			display: none;
+			@include r(1200) {
+				width: 100%;
+				border-top: 1px dashed $accent;
+				border-bottom: 1px dashed $accent;
+				padding-top: 22px;
+				display: flex;
+				padding-bottom: 22px;
+				margin-bottom: 20px;
+			}
+		}
 	}
 	&__toolbar {
 		margin-bottom: 40px;
+		@include r(1200) {
+			margin-bottom: 16px;
+		}
 	}
 	&__tag {
 		display: inline-block;
@@ -43,6 +81,12 @@
 		border-radius: 4px;
 		margin-right: 10px;
 		margin-bottom: 12px;
+		@include r(1200) {
+			font-size: 13px;
+			padding: 4px;
+			margin-right: 6px;
+			margin-bottom: 6px;
+		}
 	}
 	&__share-title {
 		font-weight: bold;

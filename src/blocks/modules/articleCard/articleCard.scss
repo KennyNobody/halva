@@ -11,6 +11,13 @@
 	@include r(780) {
 		width: 100%;
 		margin-bottom: 30px;
+		border-bottom: 1px dashed $accent;
+		margin-bottom: 0px;
+		padding-top: 10px;
+		padding-bottom: 15px;
+		&:last-of-type {
+			border-bottom: none;
+		}
 	}
 	&:hover {
 		.article-card__title {
@@ -21,13 +28,28 @@
 		position: sticky;
 		width: 100%;
 		top: 20px;
+		@include r(1200) {
+			display: none;
+		}
 	}
 	&__figure {
 		margin-bottom: 10px;
+		// @include r(1200) {
+		// 	margin-bottom: 5px;
+		// }
 	}
 	&__picture {
 		display: block;
 		height: 158px;
+		@include r(1200) {
+			height: 180px;
+		}
+		@include r(780) {
+			height: 220px;
+		}
+		@include r(480) {
+			height: 160px;
+		}
 		img {
 			display: block;
 			height: 100%;
@@ -42,6 +64,9 @@
 		margin-bottom: 10px;
 		color: $accent;
 		display: block;
+		@include r(1200) {
+			margin-bottom: 3px;
+		}
 	}
 	&__tag {
 		color: $accent;
@@ -49,11 +74,17 @@
 		font-weight: bold;
 		text-transform: uppercase;
 		letter-spacing: 0.2rem;
+		@include r(1200) {
+			margin-bottom: 3px;
+		}
 	}
 	&__title {
 		font-size: 18px;
 		font-weight: bold;
 		font-family: $font-title;
 		line-height: 1.4;
+		@include r(1200) {
+			font-size: 16px;
+		}
 	}
 }

@@ -17,6 +17,16 @@
 	&--bottom {
 		margin-bottom: 35px;
 	}
+	&--breadcrumbs {
+		@include r(1200) {
+			display: none;
+		}
+	}
+	&--person {
+		@include r(780) {
+			margin-bottom: 20px;
+		}
+	}
 }
 
 .articles {

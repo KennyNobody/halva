@@ -4,6 +4,9 @@
 	&__link {
 		text-decoration: none;
 		color: $dark;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+		overflow: hidden;
 		&--static {
 			color: #648179;
 		}

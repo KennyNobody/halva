@@ -1,17 +1,50 @@
 .article-large {
 	height: 336px;
-	background-color: $accent;
+	background-color: $light;
 	width: calc(50% - 15px);
 	text-decoration: none;
 	position: relative;
 	color: $light;
-	@include r(1200) {
+	position: relative;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	@include r(780) {
 		width: 100%;
+		height: auto;
+	}
+	&--accent {
+		@include r(780) {
+			background-color: $accent;
+			border-bottom: none;
+			&:before {
+				content: "";
+				display: block;
+				position: absolute;
+				right: 100%;
+				width: 100%;
+				top: 0px;
+				bottom: 0px;
+				background-color: $accent;
+			}
+			&:after {
+				content: "";
+				display: block;
+				position: absolute;
+				left: 100%;
+				width: 100%;
+				top: 0px;
+				bottom: 0px;
+				background-color: $accent;
+			}
+		}
 	}
 	&__image-wrap {
 		position: relative;
 		width: 100%;
 		height: 100%;
+		@include r(780) {
+			display: none;
+		}
 	}
 	&__picture {
 		position: absolute;
@@ -25,6 +58,15 @@
 			object-fit: cover;
 		}
 	}
+	&__image {
+		display: none;
+		@include r(780) {
+			display: block;
+			img {
+				width: 100%;
+			}
+		}
+	}
 	&__content-wrap {
 		position: absolute;
 		top: 0px;
@@ -34,6 +76,11 @@
 		justify-content: flex-end;
 		bottom: 0px;
 		background-image: linear-gradient(-180deg, rgba(0, 0, 0, 0) 7%, rgba(0, 0, 0, 0.08) 12%, rgba(0, 0, 0, 0.16) 17%, rgba(0, 0, 0, 0.22) 21%, rgba(0, 0, 0, 0.32) 26%, rgba(0, 0, 0, 0.42) 32%, rgba(0, 0, 0, 0.52) 38%, rgba(0, 0, 0, 0.62) 47%, rgba(0, 0, 0, 0.72) 57%, rgba(0, 0, 0, 0.82) 65%);
+		@include r(780) {
+			position: static;
+			display: block;
+			background: none;
+		}
 	}
 	&__content {
 		display: flex;
@@ -41,6 +88,9 @@
 		height: 100%;
 		flex-direction: column;
 		padding: 15px 15px;
+		@include r(780) {
+			padding: 10px 0px;
+		}
 	}
 	&__tag {
 		color: $accent;
@@ -48,10 +98,22 @@
 		font-weight: bold;
 		text-transform: uppercase;
 		letter-spacing: 0.2rem;
+		&--accent {
+			@include r(780) {
+				color: $light;
+			}
+		}
+		@include r(780) {
+			margin-bottom: 3px;
+		}
 	}
 	&__title {
 		font-weight: bold;
 		font-size: 20px;
 		font-family: $font-title;
+		@include r(780) {
+			font-size: 16px;
+			color: $dark;
+		}
 	}
 }
