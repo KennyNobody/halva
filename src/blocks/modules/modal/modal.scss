@@ -13,6 +13,12 @@
 		justify-content: center;
 		align-items: center;
 	}
+	&__container {
+		max-height: 100vh;
+		overflow-y: auto;
+		padding-top: 100px;
+		padding-bottom: 15px;
+	}
 	&__popup {
 		background: $light;
 		border-radius: 6px;
