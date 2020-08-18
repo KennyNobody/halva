@@ -1,6 +1,7 @@
 // (Все страницы) Скрипты шапки
 
 (function toggleMenu (){
+	const body = document.querySelector('.body');
 	const menuBtn = document.querySelector('.header-bottom__btn');
 	const menu = document.querySelector('.header-menu');
 	let opened = false;
@@ -10,11 +11,13 @@
 	function changeMenu() {
 		if (opened == false) {
 			menu.classList.add('header-menu--opened');
+			body.classList.add('body--blocked');
 			menuBtn.classList.add('header-bottom__btn--opened');
 			opened = true;
 		} else {
 			menu.classList.remove('header-menu--opened');
 			menuBtn.classList.remove('header-bottom__btn--opened');
+			body.classList.remove('body--blocked');
 			opened = false;
 		}
 	}

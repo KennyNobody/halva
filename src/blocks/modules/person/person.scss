@@ -96,9 +96,14 @@
 		font-family: $font-title;
 		line-height: 1.2;
 		margin-bottom: 6px;
+		text-decoration: none;
+		color: $dark;
 		@include r(780) {
 			font-size: 14px;
 			margin-bottom: 4px;
+		}
+		&:hover {
+			opacity: 0.7;
 		}
 	}
 	&__discript {

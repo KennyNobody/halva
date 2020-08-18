@@ -41,6 +41,9 @@ svg, img {
 	&--fixed {
 		padding-top: 126.5px;
 	}
+	&--blocked {
+		overflow: hidden;
+	}
 }
 
 .main {
