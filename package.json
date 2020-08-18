@@ -68,6 +68,7 @@
         "yargs": "^13.2.4"
     },
     "dependencies": {
+        "jquery": "^1.11.3",
         "micromodal": "^0.4.6",
         "smart-grid": "^2.1.2"
     },

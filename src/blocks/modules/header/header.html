@@ -68,13 +68,7 @@
 					Контакты
 				</a>
 			</nav>
-			<div class="search">
-				<button class="search__btn">
-					<svg class="icon-svg">
-						<use xlink:href="img/sprites/sprite.svg#icon-search"></use>
-					</svg>
-				</button>
-			</div>
+			@@include("../search/search.html")
 		</div>
 	</div>
 </header>
@@ -97,11 +91,24 @@
 				</div>
 				<div class="search">
 					<button class="search__btn">
-						<svg class="icon-svg">
+						<svg class="icon-svg search__icon-1">
 							<use xlink:href="img/sprites/sprite.svg#icon-search"></use>
+						</svg>
+						<svg class="icon-svg search__icon-2">
+							<use xlink:href="img/sprites/sprite.svg#icon-close"></use>
 						</svg>
 					</button>
 				</div>
+			</div>
+		</div>
+		<div class="header-middle">
+			<div class="mob-search">
+				<form class="mob-search__content">
+					<input type="text" class="mob-search__field" placeholder="Искать...">
+					<button class="mob-search__submit">
+						Искать
+					</button>
+				</form>
 			</div>
 		</div>
 		<div class="header-bottom">
@@ -138,6 +145,13 @@
 				</svg>
 			</button>
 		</div>
+
+		<!-- Блок ниже показываем только для одиночной записи -->
+		<div class="header-progress">
+			<div id="scrollBar" class="header-progress__line" style="width: 0%;"></div>
+		</div>
+
+
 		<div class="header-menu">
 			<nav class="header-menu__nav">
 				<a href="/" class="header-menu__link">

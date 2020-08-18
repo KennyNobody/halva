@@ -2,14 +2,27 @@
 	&__columns {
 		display: flex;
 		justify-content: space-between;
+		@include r(1200) {
+			flex-direction: column;
+		}
 	}
 	&__column {
 		&--thumb {
 			width: calc(100% / 12 * 7 - 15px);
+			@include r(1200) {
+				width: 100%;
+			}
 		}
 		&--content {
 			width: calc(100% / 12 * 4 - 15px);
 			padding-top: 55px;
+			@include r(1200) {
+				width: 100%;
+				padding-top: 0px;
+				margin-bottom: 50px;
+				padding-top: 20px;
+				order: -1;
+			}
 		}
 	}
 	&__thumb {
@@ -21,6 +34,10 @@
 		font-weight: bold;
 		font-family: $font-title;
 		margin-bottom: 43px;
+		@include r(1200) {
+			margin-bottom: 20px;
+			font-size: 18px;
+		}
 	}
 	&__text {
 		margin-bottom: 33px;

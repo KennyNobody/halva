@@ -31,6 +31,11 @@
 		display: flex;
 		font-weight: 500;
 		align-items: center;
+		@include r(1200) {
+			position: fixed;
+			right: 15px;
+			bottom: 15px;
+		}
 		&:hover {
 			opacity: 0.7;
 		}
@@ -39,6 +44,9 @@
 		color: $dark;
 		font-weight: 500;
 		margin-right: 12px;
+		@include r(1200) {
+			display: none;
+		}
 	}
 	svg {
 		height: 30px;
@@ -62,6 +70,7 @@
 			width: calc(100% / 12 * 8 - 15px);
 			@include r(1200) {
 				width: 100%;
+				margin-bottom: 10px;
 			}
 		}
 		&--right {
@@ -91,8 +100,37 @@
 
 .textarea {
 	display: block;
+	position: relative;
+	&--focus {
+		@include r(1200) {
+			.input__title {
+				font-size: 9px;
+				color: #648179;
+				transform: none;
+				top: 3px;
+			}
+			.input__field {
+				padding-top: 5px;
+			}
+		}
+	}
 	&--grow {
-		height: 100%;		
+		height: 100%;
+		display: flex;
+		flex-direction: column;
+		.textarea__field {
+			flex-grow: 1;
+		}
+	}
+	&__title {
+		color: #648179;
+		margin-bottom: 10px;
+		@include r(1200) {
+			position: absolute;
+			top: 8px;
+			left: 8px;
+			cursor: pointer;
+		}
 	}
 	&__field {
 		background: #F6F7FB;
@@ -105,6 +143,9 @@
 		resize: none;
 		font-family: $font-main;
 		padding: 10px 8px;
+		@include r(1200) {
+			min-height: 200px;
+		}
 		&::placeholder {
 			color: #648179;
 		}
@@ -114,12 +155,34 @@
 .input {
 	margin-bottom: 20px;
 	display: block;
+	position: relative;
 	&:last-of-type {
 		margin-bottom: 29px;
+	}
+	&--focus {
+		@include r(1200) {
+			.input__title {
+				font-size: 9px;
+				color: #648179;
+				transform: none;
+				top: 3px;
+			}
+			.input__field {
+				padding-top: 5px;
+			}
+		}
 	}
 	&__title {
 		color: #648179;
 		margin-bottom: 10px;
+		transition: 0.3s all;
+		@include r(1200) {
+			position: absolute;
+			top: 50%;
+			left: 8px;
+			transform: translateY(-50%);
+			cursor: pointer;
+		}
 	}
 	&__field {
 		background: #F6F7FB;
