@@ -1,0 +1,62 @@
+<div id="modal-error" class="modal" aria-hidden="true">
+	<div class="modal__overlay" tabindex="-1" data-micromodal-close>
+		<div class="container modal__container">
+			<section class="modal__popup" aria-modal="true" aria-labelledby="modal-error-title">
+				<div class="modal__content">
+					<button class="modal__close" data-micromodal-close>
+						<svg class="icon-svg">
+							<use xlink:href="img/sprites/sprite.svg#icon-close"></use>
+						</svg>
+					</button>
+					<h2 class="title">
+						<span class="title__text">
+							Сообщить об ошибке
+						</span>
+					</h2>
+					<form action="" class="form">
+						<div class="form__columns">
+							<div class="form__column form__column--left">
+								<label class="input">
+									<p class="input__title">
+										Текст ошибки
+									</p>
+									<input type="text" class="input__field" id="error-input" value="">
+								</label>
+								<label class="textarea textarea--grow">
+									<p class="textarea__title">
+										Ваш комментарий
+									</p>
+									<textarea class="textarea__field"></textarea>
+								</label>
+							</div>
+							<div class="form__column form__column--right">
+								<label class="input">
+									<p class="input__title">
+										Ваше имя
+									</p>
+									<input type="text" class="input__field">
+								</label>
+								<label class="input">
+									<p class="input__title">
+										Ваш телефон
+									</p>
+									<input type="text" class="input__field">
+								</label>
+								<label class="input">
+									<p class="input__title">
+										Ваш e-mail
+									</p>
+									<input type="email" class="input__field">
+								</label>
+								<button class="form__btn">
+									Отправить
+								</button>
+							</div>
+						</div>
+					</form>
+				</div>
+			</div>
+		</section>
+
+	</div>
+</div>
