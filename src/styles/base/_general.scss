@@ -38,6 +38,9 @@ svg, img {
 	@include r(1200) {
 		
 	}
+	&--fixed {
+		padding-top: 126.5px;
+	}
 }
 
 .main {

@@ -27,7 +27,7 @@
 	window.addEventListener('scroll', changeHeader);
 
 	function changeHeader() {
-		if (window.pageYOffset > 47) {
+		if (window.pageYOffset > 47 && window.innerWidth < 1200) {
 			header.classList.add('header--fixed');
 			body.classList.add('body--fixed');
 		} else {
