@@ -1,3 +1,5 @@
+// (Все страницы) Скрипты из подвала
+
 (function scrollToTop(){
 	const btn = document.querySelector('.to-top__link');
 

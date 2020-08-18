@@ -1,3 +1,5 @@
+// (СВсе страницы) Скрипты поиска
+
 (function toggleDesktopSearch(){
 	const btn = document.querySelectorAll('.search__btn');
 	const searchDesktop = document.querySelector('.search');
