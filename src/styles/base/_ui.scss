@@ -105,14 +105,14 @@
 	position: relative;
 	&--focus {
 		@include r(1200) {
-			.input__title {
+			.textarea__title {
 				font-size: 9px;
 				color: #648179;
 				transform: none;
 				top: 3px;
 			}
-			.input__field {
-				padding-top: 5px;
+			.textarea__field {
+				padding-top: 15px;
 			}
 		}
 	}
