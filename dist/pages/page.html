@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>New Page</title>
+        <meta name="theme-color" content="#c9e0e04d">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <link rel="shortcut icon" href="img/favicons/favicon.ico" type="image/x-icon">
+        <link rel="icon" sizes="16x16" href="img/favicons/favicon-16x16.png" type="image/png">
+        <link rel="icon" sizes="32x32" href="img/favicons/favicon-32x32.png" type="image/png">
+        <link rel="apple-touch-icon-precomposed" href="img/favicons/apple-touch-icon-precomposed.png">
+        <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
+        <link rel="apple-touch-icon" sizes="57x57" href="img/favicons/apple-touch-icon-57x57.png">
+        <link rel="apple-touch-icon" sizes="60x60" href="img/favicons/apple-touch-icon-60x60.png">
+        <link rel="apple-touch-icon" sizes="72x72" href="img/favicons/apple-touch-icon-72x72.png">
+        <link rel="apple-touch-icon" sizes="76x76" href="img/favicons/apple-touch-icon-76x76.png">
+        <link rel="apple-touch-icon" sizes="114x114" href="img/favicons/apple-touch-icon-114x114.png">
+        <link rel="apple-touch-icon" sizes="120x120" href="img/favicons/apple-touch-icon-120x120.png">
+        <link rel="apple-touch-icon" sizes="144x144" href="img/favicons/apple-touch-icon-144x144.png">
+        <link rel="apple-touch-icon" sizes="152x152" href="img/favicons/apple-touch-icon-152x152.png">
+        <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
+        <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
+        <link rel="stylesheet" href="styles/main.css">
+    </head>
+    <body>
+        <!-- Мобильное и декстопное меню слишком отличается по структуре, поэтому сделал два разных. Там ничего "тяжелого" нет, так что приемлемо -->
+
+<header class="header">
+	<div class="container header__container">
+		<div class="header-top">
+			<a href="/" class="header-top__logo">
+				<img src="img/logo.svg" alt="Логотип halva.tj">
+			</a>
+			<div class="toolbar">
+				<div class="toolbar__socials">
+					<a href="" class="toolbar__link">
+						<svg class="icon-svg">
+							<use xlink:href="img/sprites/sprite.svg#icon-fb"></use>
+						</svg>
+					</a>
+					<a href="" class="toolbar__link">
+						<svg class="icon-svg">
+							<use xlink:href="img/sprites/sprite.svg#icon-ok"></use>
+						</svg>
+					</a>
+					<a href="" class="toolbar__link">
+						<svg class="icon-svg">
+							<use xlink:href="img/sprites/sprite.svg#icon-in"></use>
+						</svg>
+					</a>
+					<a href="" class="toolbar__link">
+						<svg class="icon-svg">
+							<use xlink:href="img/sprites/sprite.svg#icon-vk"></use>
+						</svg>
+					</a>
+				</div>
+				<div class="toolbar__separator"></div>
+				<div class="toolbar__languages">
+					<a href="" class="toolbar__lang toolbar__lang--active">
+						Ru
+					</a>
+					|
+					<a href="" class="toolbar__lang">
+						Tj
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<nav class="header-bottom__nav">
+				<a href="/" class="header-bottom__link">
+					Главная
+				</a>
+				<a href="news.html" class="header-bottom__link">
+					Новости
+				</a>
+				<a href="analytic.html" class="header-bottom__link">
+					Аналитика
+				</a>
+				<a href="" class="header-bottom__link">
+					Сети
+				</a>
+				<a href="" class="header-bottom__link">
+					Возможности
+				</a>
+				<a href="" class="header-bottom__link">
+					Великий и могучий
+				</a>
+				<a href="learning.html" class="header-bottom__link">
+					Обучение
+				</a>
+				<a href="contacts.html" class="header-bottom__link">
+					Контакты
+				</a>
+			</nav>
+			<div class="search">
+	<form class="search__content">
+		<input type="text" class="search__field" placeholder="Что ищем?">
+		<button class="search__submit">
+			Искать
+		</button>
+	</form>
+	<button class="search__btn">
+		<svg class="icon-svg search__icon-1">
+			<use xlink:href="img/sprites/sprite.svg#icon-search"></use>
+		</svg>
+		<svg class="icon-svg search__icon-2">
+			<use xlink:href="img/sprites/sprite.svg#icon-close"></use>
+		</svg>
+	</button>
+</div>
+		</div>
+	</div>
+</header>
+
+<header class="header header--mob">
+	<div class="container header__container">
+		<div class="header-top">
+			<a href="/" class="header-top__logo">
+				<img src="img/logo.svg" alt="Логотип halva.tj">
+			</a>
+			<div class="toolbar">
+				<div class="toolbar__languages">
+					<a href="" class="toolbar__lang toolbar__lang--active">
+						Ru
+					</a>
+					|
+					<a href="" class="toolbar__lang">
+						Tj
+					</a>
+				</div>
+				<div class="search">
+					<button class="search__btn">
+						<svg class="icon-svg search__icon-1">
+							<use xlink:href="img/sprites/sprite.svg#icon-search"></use>
+						</svg>
+						<svg class="icon-svg search__icon-2">
+							<use xlink:href="img/sprites/sprite.svg#icon-close"></use>
+						</svg>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="header-middle">
+			<div class="mob-search">
+				<form class="mob-search__content">
+					<input type="text" class="mob-search__field" placeholder="Что ищем?">
+					<button class="mob-search__submit">
+						Искать
+					</button>
+				</form>
+			</div>
+		</div>
+		<div class="header-bottom">
+			<div class="toolbar">
+				<div class="toolbar__socials">
+					<a href="" class="toolbar__link">
+						<svg class="icon-svg">
+							<use xlink:href="img/sprites/sprite.svg#icon-fb"></use>
+						</svg>
+					</a>
+					<a href="" class="toolbar__link">
+						<svg class="icon-svg">
+							<use xlink:href="img/sprites/sprite.svg#icon-ok"></use>
+						</svg>
+					</a>
+					<a href="" class="toolbar__link">
+						<svg class="icon-svg">
+							<use xlink:href="img/sprites/sprite.svg#icon-in"></use>
+						</svg>
+					</a>
+					<a href="" class="toolbar__link">
+						<svg class="icon-svg">
+							<use xlink:href="img/sprites/sprite.svg#icon-vk"></use>
+						</svg>
+					</a>
+				</div>
+			</div>
+			<button class="header-bottom__btn">
+				<svg class="icon-svg">
+					<use xlink:href="img/sprites/sprite.svg#icon-burger"></use>
+				</svg>
+				<svg class="icon-svg">
+					<use xlink:href="img/sprites/sprite.svg#icon-close"></use>
+				</svg>
+			</button>
+		</div>
+
+		<!-- Блок ниже показываем только для одиночной записи -->
+		<div class="header-progress">
+			<div id="scrollBar" class="header-progress__line" style="width: 0%;"></div>
+		</div>
+
+
+		<div class="header-menu">
+			<nav class="header-menu__nav">
+				<a href="/" class="header-menu__link">
+					Главная
+				</a>
+				<a href="/" class="header-menu__link">
+					Новости
+				</a>
+				<a href="/" class="header-menu__link">
+					Аналитика
+				</a>
+				<a href="/" class="header-menu__link">
+					Сети
+				</a>
+				<a href="/" class="header-menu__link">
+					Возможности
+				</a>
+				<a href="/" class="header-menu__link">
+					Великий могучий
+				</a>
+				<a href="/" class="header-menu__link">
+					Обучение
+				</a>
+				<a href="/" class="header-menu__link">
+					Контакты
+				</a>
+			</nav>
+		</div>
+	</div>
+</header>
+        <h1>New Page</h1>
+        <footer class="footer">
+	<div class="container footer__container">
+		<div class="footer__column footer__column--left">
+			<a href="/" class="footer__logo">
+				<img src="img/logo-light.svg" alt="Логотип halva.tj">
+			</a>
+			<button class="footer__btn" data-custom-open="modal-1">
+				Связаться с редакцией
+			</button>
+			<p class="footer__discript">
+				Нашли ошибку? Выделите её в тексте и нажмите Ctrl+Enter.
+			</p>
+		</div>
+		<div class="footer__column footer__column--right">
+			<div class="footer__socials">
+				<p class="footer__soc-title">
+					Мы в соц. сетях
+				</p>
+				<a href="" class="footer__link">
+					<svg class="icon-svg">
+						<use xlink:href="img/sprites/sprite.svg#icon-fb-2"></use>
+					</svg>
+					<span>
+						Мы в Фейсбуке
+					</span>
+				</a>
+				<a href="" class="footer__link">
+					<svg class="icon-svg">
+						<use xlink:href="img/sprites/sprite.svg#icon-ok-2"></use>
+					</svg>
+					<span>
+						Мы в Одноклассниках
+					</span>
+				</a>
+				<a href="" class="footer__link">
+					<svg class="icon-svg">
+						<use xlink:href="img/sprites/sprite.svg#icon-in"></use>
+					</svg>
+					<span>
+						Мы в ВКонтакте
+					</span>
+				</a>
+				<a href="" class="footer__link">
+					<svg class="icon-svg">
+						<use xlink:href="img/sprites/sprite.svg#icon-vk-2"></use>
+					</svg>
+					<span>
+						Мы в Инстаграме
+					</span>
+				</a>
+			</div>
+			<a href="" class="footer__map-link">
+				Карта сайта
+			</a>
+			<button class="footer__mob-btn" data-custom-open="modal-1">
+				Написать нам
+			</button>
+			<p class="footer__discript">
+				© Информационный портал Халва, 2020. Копирование материалов halva.tj запрещено. <br><br>
+				Разработано <a href="">#diez technologies</a>
+			</p>
+		</div>
+	</div>
+</footer>
+
+<div class="temp">
+	<div class="container">
+		<a href="index.html" class="">
+			Главная
+		</a>
+		<br>
+		<br>
+		<a href="analytic.html" class="">
+			Аналитика
+		</a>
+		<br>
+		<br>
+		<a href="author.html" class="">
+			Автор
+		</a>
+		<br>
+		<br>
+		<a href="contacts.html" class="">
+			Контакты
+		</a>
+		<br>
+		<br>
+		<a href="learning.html" class="">
+			Обучение
+		</a>
+		<br>
+		<br>
+		<a href="news.html" class="">
+			Новости
+		</a>
+		<br>
+		<br>
+		<a href="single.html" class="">
+			Одиночная
+		</a>
+		<br>
+		<br>
+		<a href="none.html" class="">
+			404
+		</a>
+	</div>
+</div>
+        <script src="js/pageB.js"></script>
+        <script src="js/vendor.js"></script>
+    </body>
+</html>
