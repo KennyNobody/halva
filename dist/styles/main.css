@@ -762,13 +762,22 @@ img {
 
 .toolbar__lang {
   text-decoration: none;
-  opacity: 0.5;
+  text-transform: uppercase;
+  color: #2D3735;
+}
+
+.toolbar__lang:hover {
+  opacity: 0.7;
 }
 
 .toolbar__lang--active {
-  color: #2D3735;
-  opacity: 1;
+  color: #00D89E;
   pointer-events: none;
+  text-decoration: none;
+}
+
+.toolbar__lang--active:hover {
+  opacity: 1;
 }
 
 .footer {
@@ -814,6 +823,11 @@ img {
   font-weight: 500;
   color: #00D89E;
   margin-bottom: 20px;
+  transition: 0.3s all;
+}
+
+.footer__btn:hover {
+  opacity: 0.7;
 }
 
 .footer__discript {

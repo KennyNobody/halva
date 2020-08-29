@@ -220,11 +220,18 @@
 	}
 	&__lang {
 		text-decoration: none;
-		opacity: 0.5;
+		text-transform: uppercase;
+		color: $dark;
+		&:hover {
+			opacity: 0.7;
+		}
 		&--active {
-			color: $dark;
-			opacity: 1;
+			color: $accent;
 			pointer-events: none;
+			text-decoration: none;
+			&:hover {
+				opacity: 1;
+			}
 		}
 	}
 }

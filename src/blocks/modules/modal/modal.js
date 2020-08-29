@@ -41,3 +41,4 @@ function runOnKeys(func, ...codes) {
 }
 
 runOnKeys(openModal, "Enter", "ControlRight");
+runOnKeys(openModal, "Enter", "ControlLeft");

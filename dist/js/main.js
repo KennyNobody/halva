@@ -314,6 +314,7 @@ function runOnKeys(func) {
 }
 
 runOnKeys(openModal, "Enter", "ControlRight");
+runOnKeys(openModal, "Enter", "ControlLeft");
 
 /***/ }),
 
