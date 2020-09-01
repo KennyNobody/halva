@@ -1,0 +1,23 @@
+.tabs {
+	margin-bottom:20px;
+	@include r(1200) {
+		display: none;	
+	}
+	&__link {
+		text-decoration: none;
+		color: $dark;
+		text-transform: uppercase;
+		font-weight: bold;
+		letter-spacing: 0.2;
+		display: inline-block;
+		margin-right: 50px;
+		margin-bottom: 10px;
+		&:hover {
+			opacity: 0.6;
+		}
+		&--active {
+			color: $accent;
+			pointer-events: none;
+		}
+	}
+}

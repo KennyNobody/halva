@@ -1572,6 +1572,50 @@ img {
   display: none;
 }
 
+.tabs {
+  margin-bottom: 20px;
+}
+
+.tabs__link {
+  text-decoration: none;
+  color: #2D3735;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 0.2;
+  display: inline-block;
+  margin-right: 50px;
+  margin-bottom: 10px;
+}
+
+.tabs__link:hover {
+  opacity: 0.6;
+}
+
+.tabs__link--active {
+  color: #00D89E;
+  pointer-events: none;
+}
+
+.select {
+  background-color: #2D3735;
+  color: #00D89E;
+  width: 100%;
+  height: 40px;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  padding-left: 13px;
+  margin-bottom: 17px;
+  border-radius: 5px;
+  display: none;
+}
+
+.select option {
+  font-family: "Ubuntu", sans-serif;
+}
+
 @media only screen and (max-width: 1700px) {
   .text figure picture {
     margin-bottom: 8px;
@@ -1991,6 +2035,14 @@ img {
   .search__btn svg {
     width: 20px;
     height: 20px;
+  }
+
+  .tabs {
+    display: none;
+  }
+
+  .select {
+    display: block;
   }
 }
 
