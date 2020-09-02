@@ -1040,6 +1040,8 @@ img {
   padding-bottom: 20px;
   border-bottom: 1px dashed #00D89E;
   margin-bottom: 20px;
+  break-inside: avoid-column;
+  page-break-inside: avoid;
 }
 
 .article-line__time {
@@ -1059,6 +1061,8 @@ img {
   padding-bottom: 20px;
   border-bottom: 1px dashed #00D89E;
   margin-bottom: 20px;
+  break-inside: avoid-column;
+  page-break-inside: avoid;
 }
 
 .article-line__time {

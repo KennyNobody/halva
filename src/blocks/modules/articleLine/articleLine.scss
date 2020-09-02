@@ -7,6 +7,8 @@
 	padding-bottom: 20px;
 	border-bottom: 1px dashed #00D89E;
 	margin-bottom: 20px;
+	break-inside: avoid-column;
+	page-break-inside: avoid;
 	@include r(1200) {
 		padding-bottom: 10px;
 		padding-bottom: 10px;
