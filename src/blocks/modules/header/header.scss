@@ -102,6 +102,9 @@
 		color: $dark;
 		text-decoration: none;
 		display: inline-block;
+		&:hover {
+			opacity: 0.7;
+		}
 	}
 	&__btn {
 		height: 28px;

@@ -9,6 +9,9 @@
 	margin-bottom: 20px;
 	break-inside: avoid-column;
 	page-break-inside: avoid;
+	&:hover {
+		opacity: 0.7;
+	}
 	@include r(1200) {
 		padding-bottom: 10px;
 		padding-bottom: 10px;

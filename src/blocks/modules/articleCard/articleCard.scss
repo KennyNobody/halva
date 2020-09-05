@@ -85,6 +85,7 @@
 		font-weight: bold;
 		font-family: $font-title;
 		line-height: 1.4;
+		transition: 0.3s all;
 		@include r(1200) {
 			font-size: 16px;
 		}
