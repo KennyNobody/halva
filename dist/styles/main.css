@@ -358,12 +358,15 @@ img {
 
 .text figure picture {
   display: block;
-  margin-bottom: 14px;
 }
 
 .text figure img {
   display: block;
   margin-bottom: 0px;
+}
+
+.text figcaption {
+  font-style: italic;
 }
 
 .text img {
@@ -1070,6 +1073,7 @@ img {
   padding: 15px 15px;
   width: 100%;
   transition: 0.3s all;
+  width: 100%;
 }
 
 .article-large__tag {
@@ -1679,12 +1683,6 @@ img {
 
 .select option {
   font-family: "Ubuntu", sans-serif;
-}
-
-@media only screen and (max-width: 1700px) {
-  .text figure picture {
-    margin-bottom: 8px;
-  }
 }
 
 @media only screen and (max-width: 1200px) {

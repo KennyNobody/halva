@@ -166,15 +166,18 @@
 		}
 		picture {
 			display: block;
-			margin-bottom: 14px;
-			@include r(1700) {
-				margin-bottom: 8px;
-			}
+			// margin-bottom: 14px;
+			// @include r(1700) {
+			// 	margin-bottom: 8px;
+			// }
 		}
 		img {
 			display: block;
 			margin-bottom: 0px;
 		}
+	}
+	figcaption {
+		font-style: italic;
 	}
 	img {
 		display: block;
