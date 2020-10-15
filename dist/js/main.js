@@ -165,16 +165,19 @@
 window.addEventListener('load', function () {
   (function setCookieMessage() {
     var block = document.querySelector('.alert');
-    var btn = document.querySelector('.alert__btn');
 
-    if (block && btn && localStorage.getItem('cookieFlag') !== 'true') {
-      block.classList.add('alert--show');
+    if (block) {
+      var btn = document.querySelector('.alert__btn');
+
+      if (block && btn && localStorage.getItem('cookieFlag') !== 'true') {
+        block.classList.add('alert--show');
+      }
+
+      btn.addEventListener('click', function () {
+        block.classList.remove('alert--show');
+        localStorage.setItem('cookieFlag', true);
+      });
     }
-
-    btn.addEventListener('click', function () {
-      block.classList.remove('alert--show');
-      localStorage.setItem('cookieFlag', true);
-    });
   })();
 });
 
@@ -384,51 +387,77 @@ runOnKeys(openModal, "Enter", "ControlLeft");
 /***/ (function(module, exports) {
 
 // (Все страницы) Поведение input в модальном окне
-(function toggleInputTitle() {
-  var inputs = document.querySelectorAll('.input__field');
+window.addEventListener('load', function () {
+  (function toggleInputTitle() {
+    var inputs = document.querySelectorAll('.input__field');
 
-  if (inputs) {
-    for (var i = 0; i < inputs.length; i++) {
-      inputs[i].addEventListener('focus', addActiveClass);
-      inputs[i].addEventListener('focusout', removeActiveClass);
+    if (inputs) {
+      for (var i = 0; i < inputs.length; i++) {
+        inputs[i].addEventListener('focus', addActiveClass);
+        inputs[i].addEventListener('focusout', removeActiveClass);
+      }
     }
-  }
 
-  function addActiveClass() {
-    if (window.innerWidth < 1200) {
-      this.parentNode.classList.add('input--focus');
+    function addActiveClass() {
+      if (window.innerWidth < 1200) {
+        this.parentNode.classList.add('input--focus');
+      }
     }
-  }
 
-  function removeActiveClass() {
-    if (window.innerWidth < 1200 && this.value == false) {
-      this.parentNode.classList.remove('input--focus');
+    function removeActiveClass() {
+      if (window.innerWidth < 1200 && this.value == false) {
+        this.parentNode.classList.remove('input--focus');
+      }
     }
-  }
-})();
+  })();
 
-(function toggleTextareaTitle() {
-  var inputs = document.querySelectorAll('.textarea__field');
+  (function toggleTextareaTitle() {
+    var inputs = document.querySelectorAll('.textarea__field');
 
-  if (inputs) {
-    for (var i = 0; i < inputs.length; i++) {
-      inputs[i].addEventListener('focus', addActiveClass);
-      inputs[i].addEventListener('focusout', removeActiveClass);
+    if (inputs) {
+      for (var i = 0; i < inputs.length; i++) {
+        inputs[i].addEventListener('focus', addActiveClass);
+        inputs[i].addEventListener('focusout', removeActiveClass);
+      }
     }
-  }
 
-  function addActiveClass() {
-    if (window.innerWidth < 1200) {
-      this.parentNode.classList.add('textarea--focus');
+    function addActiveClass() {
+      if (window.innerWidth < 1200) {
+        this.parentNode.classList.add('textarea--focus');
+      }
     }
-  }
 
-  function removeActiveClass() {
-    if (window.innerWidth < 1200 && this.value == false) {
-      this.parentNode.classList.remove('textarea--focus');
+    function removeActiveClass() {
+      if (window.innerWidth < 1200 && this.value == false) {
+        this.parentNode.classList.remove('textarea--focus');
+      }
     }
-  }
-})();
+  })();
+
+  (function setFigure() {
+    var block = document.querySelector('.single__text');
+
+    if (block) {
+      var img = block.querySelectorAll('img');
+
+      for (var i = 0; i < img.length; i++) {
+        setWrap(img[i]);
+      }
+    }
+
+    function setWrap(item) {
+      var title = item.getAttribute('title');
+      var alt = item.getAttribute('alt');
+      var src = item.getAttribute('src');
+
+      if (title && src) {
+        var el = "\n\t\t\t\t<figure>\n\t\t\t\t<picture>\n\t\t\t\t<img src=\"".concat(src, "\" alt=\"").concat(alt, "\">\n\t\t\t\t</picture>\n\t\t\t\t<figcaption>").concat(title, "</figcaption>\n\t\t\t\t</figure>");
+        item.insertAdjacentHTML('beforebegin', el);
+        item.remove();
+      }
+    }
+  })();
+});
 
 /***/ }),
 
