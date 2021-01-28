@@ -4,3 +4,4 @@ import "%modules%/modal/modal";
 import "%modules%/ui/ui";
 import "%modules%/alert/alert";
 import "%modules%/search/search";
+import "%modules%/slider/slider";

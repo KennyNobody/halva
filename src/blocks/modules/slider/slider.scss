@@ -1,0 +1,41 @@
+.slider {
+	color: $accent;
+	margin-bottom: 12px;
+	@include r(480) {
+		display: none;
+	}
+	&__slide {
+		img {
+			display: block;
+			height: auto;
+			width: 100%;
+		}
+	}
+	&__picture {
+		display: block;
+	}
+}
+
+.slider-nav {
+	margin-bottom: 20px;
+	&__wrapper {
+		position: relative;
+	}
+	&__slide {
+		padding-left: 10px;
+		padding-right: 10px;
+		img {
+			display: block;
+			height: auto;
+			width: 100%;
+		}
+	}
+	&__btn {
+		position: absolute;
+		z-index: 2;
+	}
+	.slick-list {
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+}
