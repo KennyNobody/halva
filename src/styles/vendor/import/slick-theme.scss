@@ -42,7 +42,7 @@ $slick-opacity-not-active: 0.25 !default;
     cursor: pointer;
     background: $accent;
     color: $light;
-    top: 50%;
+    top: calc(50% - 40px);
     transform: translate(0, -50%);
     padding: 0;
     border: none;

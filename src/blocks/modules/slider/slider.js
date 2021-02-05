@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 	$('.slider').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		arrows: false,
+		arrows: true,
 		asNavFor: '.slider-nav'
 	});
 
@@ -12,10 +12,9 @@ document.addEventListener('DOMContentLoaded', function() {
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		asNavFor: '.slider',
-		arrows: true,
+		arrows: false,
 		// centerMode: true,
 		focusOnSelect: true,
-		// nextArrow: '.slider-nav__btn--next',
 		responsive: [
 		{
 			breakpoint: 1024,
@@ -31,13 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
 			settings: {
 				slidesToShow: 2,
 				slidesToScroll: 2
-			}
-		},
-		{
-			breakpoint: 480,
-			settings: {
-				slidesToShow: 1,
-				slidesToScroll: 1
 			}
 		}
 		]
