@@ -453,6 +453,20 @@ img {
   flex-grow: 1;
 }
 
+.position-left {
+  float: left;
+  margin: 0px 12px 12px 0;
+}
+
+.position-right {
+  float: right;
+  margin: 0px 0 12px 12px;
+}
+
+.article-card-in-detail {
+  width: 50%;
+}
+
 .container {
   max-width: 1170px;
   width: 100%;
@@ -548,6 +562,7 @@ img {
   margin-bottom: 1em;
   font-weight: 300;
   font-family: "Roboto Slab", serif;
+  margin: 2em 0;
 }
 
 .text blockquote:before {
@@ -676,6 +691,8 @@ img {
   text-transform: uppercase;
   font-weight: bold;
   margin-bottom: 30px;
+  font-size: 1.15em;
+  padding-bottom: 0;
 }
 
 .title__text {
@@ -1120,8 +1137,9 @@ img {
 }
 
 .footer__socials {
-  column-width: 300px;
   margin-right: 17px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .footer__soc-title {
@@ -1134,6 +1152,7 @@ img {
   text-decoration: none;
   color: #ffffff;
   margin-bottom: 11px;
+  width: 33%;
 }
 
 .footer__link:hover {
@@ -1144,7 +1163,7 @@ img {
   height: 30px;
   width: 30px;
   display: block;
-  margin-right: 30px;
+  margin-right: 10px;
 }
 
 .footer__map-link {
@@ -2085,6 +2104,10 @@ img {
 }
 
 @media only screen and (max-width: 1200px) {
+  .article-card-in-detail {
+    width: 100%;
+  }
+
   .section--breadcrumbs {
     display: none;
   }
@@ -2294,7 +2317,6 @@ img {
   }
 
   .footer__socials {
-    column-width: auto;
     margin-right: 0px;
     border-bottom: 1px solid #4F5F5A;
     padding-bottom: 11px;
@@ -2318,6 +2340,7 @@ img {
   }
 
   .footer__link {
+    width: auto;
     margin-right: 12px;
     margin-bottom: 0px;
     display: inline-flex;
@@ -2445,6 +2468,7 @@ img {
   }
 
   .single__author--mobile {
+    flex-direction: column;
     width: 100%;
     border-top: 1px dashed #00D89E;
     border-bottom: 1px dashed #00D89E;

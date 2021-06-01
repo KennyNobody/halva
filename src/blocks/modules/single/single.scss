@@ -58,6 +58,7 @@
 		&--mobile {
 			display: none;
 			@include r(1200) {
+				flex-direction: column;
 				width: 100%;
 				border-top: 1px dashed $accent;
 				border-bottom: 1px dashed $accent;
